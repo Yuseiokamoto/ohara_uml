@@ -1,0 +1,19 @@
+@startuml Robodogユースケース図
+left to right direction
+actor ユーザー as U
+
+rectangle 図書館システム {
+  usecase "貸し出し予約をする" as UC1
+  usecase "貸出履歴を記録する" as UC2
+  usecase "貸出履歴を閲覧する" as UC3
+  usecase "図書を借りる" as UC4
+  usecase "図書を返却する" as UC5
+  usecase "予約を管理する" as UC5
+
+}
+U --> UC1
+U --> UC2
+U --> UC3
+U --> UC4
+U --> UC5
+@enduml
